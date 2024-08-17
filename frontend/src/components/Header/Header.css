@@ -1,0 +1,114 @@
+/* General Header Container */
+.header-container,
+.header-container2 {
+  width: calc(100% - 80px);
+  height: 100vh;
+  margin-top: 100px;
+  background-color: rgb(255, 255, 255);
+  margin: 30px 40px 0;
+  box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px; /* Added padding for better spacing */
+}
+
+/* Notes Container */
+.notes-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  margin-top: 20px; /* Reduced margin to fit better within the new layout */
+}
+
+/* Note Item */
+.note-item {
+  width: 400px;
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title and Content Areas */
+.note-item h3 {
+  font-size: 24px;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.note-item p {
+  font-size: 16px;
+  color: black;
+  white-space: pre-wrap; /* To ensure line breaks are respected */
+}
+
+/* Tools Area */
+.tools {
+  font-size: 24px;
+  display: flex;
+  justify-content: space-between; /* Better spacing between icons */
+}
+
+/* Clickable Tools */
+.tools .click {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.tools .click:hover {
+  color: #007bff;
+}
+
+/* Create Note Area */
+.create-note-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 400px;
+  padding: 20px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+}
+
+/* Input and Textarea for New Note */
+.create-note-area input,
+.create-note-area textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Button for Adding New Note */
+.create-note-area button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.create-note-area button:hover {
+  background-color: #0056b3;
+}
+
+/* User Login/Signup Status */
+.header-container2 h3 {
+  width: 100%;
+  font-size: 24px;
+  text-align: center;
+  color: #333;
+  margin-top: 20px;
+}

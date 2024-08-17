@@ -1,0 +1,39 @@
+.navbar-container {
+    width: calc(100% - 80px); /* 40px sağ, 40px sol margin için genişlikten çıkartıldı */
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    margin: 30px 40px 0;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2); 
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  
+  .navbar-left :first-child{
+    font-size: 70px;
+  }
+  .navbar-right{
+    display: flex;
+    gap: 50px;
+  }
+  .navbar-right a{
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+  }
+  .navbar-right a.active{
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    border-bottom-style: solid;
+    border-bottom-color: red;
+  }
+  .navbar-right a:first-child{
+    font-size: 40px;
+    display: flex;
+    gap: 30px;
+  }
